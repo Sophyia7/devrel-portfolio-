@@ -8,6 +8,41 @@ https://www.tooplate.com/view/2115-marvel
 
 
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+
+:root {
+  --fs-1: 2.5rem;  /* Adjust these values as needed */
+  --fs-2: 2rem;
+  --fs-3: 1.75rem;
+  --fs-4: 1.5rem;
+  --fs-5: 1.25rem;
+  --fs-6: 1rem;
+}
+
+.fs-1 {
+  font-size: var(--fs-1);
+}
+
+.fs-2 {
+  font-size: var(--fs-2);
+}
+
+.fs-3 {
+  font-size: var(--fs-3);
+}
+
+.fs-4 {
+  font-size: var(--fs-4);
+}
+
+.fs-5 {
+  font-size: var(--fs-5);
+}
+
+.fs-6 {
+  font-size: var(--fs-6);
+}
+
+
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
@@ -40,7 +75,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffc200 !important;
+  color: #058af6 !important;
 }
 
 .navbar-brand .uil {
@@ -52,6 +87,10 @@ p {
   font-weight: 300;
   line-height: 1.5;
   color: #5b5b5b;
+}
+
+.years {
+  font-weight: 900;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,14 +131,14 @@ b, strong {
   transition: all 0.4s ease;
 }
 .custom-btn:hover {
-  color: #ffc200;
+  color: #058af6;
 }
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #ffc200;
+  background: #058af6;
   color: #ffffff !important;
 }
 
@@ -116,7 +155,7 @@ b, strong {
 }
 
 .animated-item {
-  color: #ffc200;
+  color: #058af6;
 }
 
 .animated-item {
@@ -214,7 +253,7 @@ b, strong {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #058af6;
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
@@ -290,20 +329,25 @@ b, strong {
 }
 
 .dark-mode {
-  background: #141424;
+  background: #111;
+
 }
+.dark-mode p {
+  color: #9e9e9e;
+}
+
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: #ffffff;
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #058af6;
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
-  background: #6b6b74;
+  background: #111;
   border-bottom: 1px solid #1f1f1f;
 }
 .dark-mode .small-text {
-  background: #0d0c15;
+  background: #111;
   color: #ffffff;
 }
 .dark-mode .feature-card .uil,
@@ -318,31 +362,89 @@ b, strong {
   color: #ffffff;
 }
 
+.dark-mode ul li {
+  color: #9e9e9e;
+}
+
+.dark-mode h3 small{
+  color: #9e9e9e;
+}
+
+.dark-mode .timeline-yr, .dark-mode .timeline-wrapper:before{ 
+  background-color: #424242;
+}
+
+
+.resume {
+  max-width: 1200px;
+  margin: 20px auto;
+  /* background: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #111;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .timeline-wrapper {
   position: relative;
   padding: 22px 0;
 }
+
 .timeline-wrapper:last-child:before {
   height: 0;
 }
+.timeline-info ul li {
+  list-style-type: disc;
+}
+
 .timeline-wrapper:before {
   content: "";
-  background: #474559;
+  background: #111;
   width: 3px;
   height: 100%;
   position: absolute;
   left: 38px;
+  top: 14%;
+
 }
 
 .timeline-yr {
-  background: #474559;
+  background: #111;
   border-radius: 100%;
   position: absolute;
-  width: 75px;
-  height: 75px;
+  width: 30px;
+  top: 14%;
+  left: 4.5%;
+  height: 30px;
   line-height: 75px;
   text-align: center;
 }
+
 .timeline-yr span {
   color: #ffffff;
   font-size: 16px;
@@ -357,8 +459,9 @@ b, strong {
   max-width: 432px;
   margin-left: 6em;
 }
+
 .timeline-info small {
-  color: #474559;
+  color: #333;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;
@@ -412,7 +515,7 @@ b, strong {
   font-size: inherit;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-  color: #ffc200;
+  color: #058af6;
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
@@ -425,48 +528,75 @@ b, strong {
   background: #5b5b5b;
 }
 
-.google-map iframe {
-  width: 100%;
+.chat {
+  padding: 5rem  !important;
+  background: #111111ef;
+  text-align: center;
 }
 
-.contact-form {
-  position: relative;
+h1.gradient-text {
+  background: linear-gradient(to right, #868686, #e0dfe0,#3c3c3c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.contact-form .form-control {
-  background: transparent;
-  border-radius: 2px;
-  outline: none;
-  box-shadow: none;
-  font-weight: bold;
-  margin: 16px 0;
+
+.btn-cta{
+  background: #e4e6ea16;
+border-radius: 14px  ;
+padding: 10px 20px ;
+font-weight: bold;
+border-style: none;
+color: white;
 }
-.contact-form .form-control:not(textarea) {
-  height: 48px;
+
+.coffee-chat .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: #ffc200;
+
+.coffee-chat h1 {
+  font-size: 2.5em;
+  color: #777;
+  margin: 0;
 }
-.contact-form .submit-btn {
-  background: #ffc200;
+
+.coffee-chat .highlight {
+  color: #058af6; /* Pink color */
+}
+
+.coffee-chat p {
+  font-size: 1.2em;
+  color: #e3e2e2;
+  margin: 20px 0;
+}
+
+.coffee-chat .link {
+  color: #058af6; /* Pink color */
+  text-decoration: none;
+}
+
+.coffee-chat .link:hover {
+  text-decoration: underline;
+}
+
+.coffee-chat .btn {
+  background-color: #058af6;
+  color: white;
+  border: none;
   border-radius: 50px;
-  color: #ffffff;
-  font-weight: bold;
-  border: 0;
+  padding: 10px 20px;
+  font-size: 1em;
   cursor: pointer;
-  transition: all 0.4s ease;
-}
-.contact-form .submit-btn:hover {
-  background: #474559;
+  transition: background-color 0.3s ease;
 }
 
-.contact-info {
-  background: #474559;
-  border-radius: 0 0 3px 3px;
-  position: relative;
-  bottom: 8px;
+.coffee-chat .btn:hover {
+  background-color: #058af6; /* Darker pink */
 }
-.contact-info p, .contact-info a {
-  color: #f7f3f3;
+
+.icon {
+  font-size: 2em;
 }
 
 .social-links .uil {
@@ -537,6 +667,7 @@ b, strong {
   .animated-item {
     font-size: 30px;
   }
+  
 
   .custom-btn-group {
     text-align: center;
@@ -556,13 +687,36 @@ b, strong {
     margin: 10px 0 0 0;
   }
 }
+
+@media (max-width: 400px) {
+  .timeline-wrapper:before {
+    left: 10px;
+    top: 14%;
+  }
+
+  .timeline-yr {
+    left: -1%;
+    top: 9%;
+  }
+}
+
+.chat {
+  padding: 40px 0px !important; 
+}
+
+
+
 @media (max-width: 320px) {
   .animated-text {
     margin-top: 0;
   }
-
+.timeline-yr{
+  top: 14%;
+  left: 39%;
+}
   .about-text {
     text-align: center;
+    color: white;
   }
 
   .full-screen {
