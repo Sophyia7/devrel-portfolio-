@@ -374,6 +374,22 @@ b, strong {
   background-color: #424242;
 }
 
+.dark-mode .chat {
+  background: #f8f8f8;
+  color: #111;
+}
+
+.dark-mode .chat-text {
+  color: #111;
+}
+
+.dark-mode h1.gradient-text {
+  background: #070707 #3d3d3d #424040;
+}
+
+.dark-mode .btn-cta {
+  background: #373737; 
+}
 
 .resume {
   max-width: 1200px;
